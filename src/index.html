@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Simple-Chat</title>
+</head>
+<body>
+    <main>
+        <header>
+            <p>Atendimento online</p>
+        </header>
+        <section class="chat_container" id="chat">
+        </section>
+        <footer>
+            <input type="text" id="menssage_dig" placeholder="Digite sua menssagem...">
+            <button class="btn_enviar" onclick="sendMessage()">Enviar</button>
+        </footer>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>    
+    <script src="index.js"></script>
+</body>
+</html>

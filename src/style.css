@@ -28,6 +28,14 @@ section {
     border-radius: 0.5rem;
     flex-direction: column;
     gap: 0.4rem;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+
+section::-webkit-scrollbar {
+    display: none;
 }
 
 header, footer{
@@ -54,22 +62,24 @@ span {
     color: rgba(245, 245, 245, 0.705);
 }
 
-.my_message {
+.receive {
+    display: grid;
+    background-color: rgba(69, 103, 141, 0.63);
+    padding: 0.5rem 0.2rem;
+    width: min(300px);
+        overflow-wrap: anywhere;
+    border-radius: 0rem 1rem 1rem 1rem;
+}
+
+.sent{
     display: grid;
     padding: 0.5rem 0.2rem;
     justify-items: end;
     align-self: flex-end;
     background-color: #8ac1e0;
     width: min(300px);
+    overflow-wrap: anywhere;
     border-radius: 1rem 1rem 0rem 1rem;
-}
-
-.att_message {
-    display: grid;
-    background-color: rgba(69, 103, 141, 0.63);
-    padding: 0.5rem 0.2rem;
-    width: min(300px);
-    border-radius: 0rem 1rem 1rem 1rem;
 }
 
 .my_name{
@@ -84,7 +94,7 @@ footer input {
   border: none;  
 }
 
-.menssage_dig{
+#menssage_dig{
     padding: 5px;
 }
 

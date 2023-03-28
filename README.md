@@ -1,6 +1,6 @@
-#Commands
+# Commands
 
-# Install firebase
+#Install firebase
 
 npm i firebase
 
